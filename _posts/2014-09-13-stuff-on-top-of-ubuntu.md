@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Stuff on top of Ubuntu"
+date:   2014-09-13 16:00:00
+categories: linux
+---
+
+
 Stuff to install or setup on top of default ubuntu installation
 
 # Launcher

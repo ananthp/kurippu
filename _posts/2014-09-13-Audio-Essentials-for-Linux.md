@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Audio Essentials for linux"
+date:   2014-09-13 16:00:00
+categories: linux
+---
+
 # Applications
 
 ## Must have

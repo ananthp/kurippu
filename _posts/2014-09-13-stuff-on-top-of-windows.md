@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Stuff on top of Windows"
+date:   2014-09-13 16:00:00
+categories: windows
+---
+
+
 ## Basics
 
 * Firefox. Sync

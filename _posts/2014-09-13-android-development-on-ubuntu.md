@@ -1,4 +1,10 @@
-# Android Development On Ubuntu
+---
+layout: post
+title: "Android Development On Ubuntu"
+date:   2014-09-13 18:52:20
+categories: dev linux
+---
+
 
 ## Setup
 

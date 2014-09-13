@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Linux Hacks"
+date:   2014-09-13 16:00:00
+categories: linux
+---
+
 ### Run a command repeatedly and monitor output: `sensors` for instance
 
 commands line `sensors` outputs a status and exit. We end up running the same command again and again to monitor the status or progress. 
@@ -13,6 +20,7 @@ useful to monitor: `sensors`, zfs scrub status
 
 
 ## LVM
+
 ### Expand a logical volume, or, What to do when running out of space in one of LVM drives
 
 1. _Extend_ the logical volume. Add enough room.  
@@ -32,7 +40,8 @@ useful to monitor: `sensors`, zfs scrub status
 Window manager crashes. Only desktop icons are visible and can be opened. Launcher doesn't show up. Windows appear without borders. Other users' logins are ok.
 
 Proven Workaround: delete _~/.config/dbconf/user
-Warning: All customizations will be lost -- launcher shorcuts, display tweaks (workspaces, autohide), privacy (search results)
+
+*Warning*: All customizations will be lost -- launcher shorcuts, display tweaks (workspaces, autohide), privacy (search results)
 
 source: http://askubuntu.com/questions/450561/no-window-manager-after-upgrading-13-10-to-14-04
 
