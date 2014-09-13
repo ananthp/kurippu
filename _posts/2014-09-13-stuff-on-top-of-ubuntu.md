@@ -70,6 +70,12 @@ ubuntu-restricted-extras <-- not sure now if the option is selected during ubunt
  
 * pychess numptyphysics lightsoff bovo pioneers smc palapeli pathological
 * circular-chaos  
+* super tux kart
+* gcompris
+
+### experimental
+
+* pingus, secret maryo chronicles (smc, smc-music), supertux, flightgear flight simulator
 
 # SETUP
 
