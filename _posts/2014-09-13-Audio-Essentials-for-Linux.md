@@ -10,6 +10,7 @@ categories: linux
 ## Must have
 
 calf timidity++ ardour seq24 mhwaveedit audacity zynaddsubfx amsynth yoshimi qjackctl envy24
+jack2 instead of jack?
 
 lilypond - HUGE! has textlive as dependency.
 
