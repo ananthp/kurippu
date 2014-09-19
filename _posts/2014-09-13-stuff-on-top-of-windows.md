@@ -67,6 +67,13 @@ http://foldersize.sourceforge.net/
 ### Windows
 
 * Theme (Desktop > Personalize > Browse Themes Online)
+* 
+
+### Disable Hibernation
+
+Saves several GBs of space
+
+`powercfg -h off`
 
 #### Disable Automatic Jack Detection (Audio)
 
