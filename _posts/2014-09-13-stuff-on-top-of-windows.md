@@ -24,6 +24,7 @@ categories: windows
 * Android SDK
 * Virtualbox. Extension pack?
 * Visual Studio, VsVim, Relative Number
+* [mysysgit](https://github.com/msysgit/msysgit/releases)
 * GitHub for Windows
 
 ### Untested
@@ -46,7 +47,7 @@ http://foldersize.sourceforge.net/
 * BatteryCare (for laptop)
 * windirstat
 * [Wade's Toolbox](http://wademan.com/toolbox)
-* [Cmder](https://github.com/bliker/cmder) (based on ConEmu)
+* [Cmder](https://github.com/bliker/cmder) (based on ConEmu. May need to replace conemu folder with [latest](http://www.fosshub.com/ConEmu.html))
 * [Pandoc](http://johnmacfarlane.net/pandoc/installing.html) to convert markdown to docx or pdf. Converting markdown to word document is as simple as `pandoc "hello.md" -o "hello.docx"`
 * Xmind (mindmapping utility. Mindmaps are kept [here](https://bitbucket.org/rpattabi/stuff).)
 * [SUMo](http://www.kcsoftwares.com/sumo/start/). Software Update Monitor. Helps to keep windows software up-to-date. Don't use the installer; use zip file to avoid crapware.
