@@ -220,6 +220,15 @@ rvm install jruby --1.9
 
 ```
 
+### C++
+
+[vim for c++](http://www.alexeyshmalko.com/2014/using-vim-as-c-cpp-ide/)
+vim plugin [YouCompleteMe](http://www.alexeyshmalko.com/2014/youcompleteme-ultimate-autocomplete-plugin-for-vim/)
+
+```
+sudo apt-get install clang
+```
+
 ### Use windows plugins: flash, silverlight, ...
 
 ```
