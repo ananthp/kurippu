@@ -160,7 +160,7 @@ git config --global credential.helper store
 ### vim
 
 * Install vim-gnome
-* Install vundle from github. https://github.com/gmarik/vundle
+* Install vundle from github. `git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle`
 
 #### vim bundles
 
@@ -184,6 +184,87 @@ Following was required to be added for ~/.bashrc since gvim took time to start
 
 ```
 function gvim() { (/usr/bin/gvim -f "$@" &) }
+```
+
+#### .vimrc sample
+
+```
+set dictionary+=~/.vim/roget13a.txt
+set thesaurus+=~/.vim/mthesaur.txt
+
+""
+"" Janus setup
+""
+
+" Define paths
+let g:janus_path = escape(fnamemodify(resolve(expand("<sfile>:p")), ":h"), ' ')
+let g:janus_vim_path = escape(fnamemodify(resolve(expand("<sfile>:p" . "vim")), ":h"), ' ')
+let g:janus_custom_path = expand("~/.janus")
+
+" Source janus's core
+exe 'source ' . g:janus_vim_path . '/core/before/plugin/janus.vim'
+
+" You should note that groups will be processed by Pathogen in reverse
+" order they were added.
+call janus#add_group("tools")
+call janus#add_group("langs")
+call janus#add_group("colors")
+
+""
+"" Customisations
+""
+
+if filereadable(expand("~/.vimrc.before"))
+  source ~/.vimrc.before
+endif
+
+
+" Disable plugins prior to loading pathogen
+exe 'source ' . g:janus_vim_path . '/core/plugins.vim'
+
+""
+"" Pathogen setup
+""
+
+" Load all groups, custom dir, and janus core
+call janus#load_pathogen()
+
+" .vimrc.after is loaded after the plugins have loaded
+
+colorscheme autumn
+
+" Vundle Stuff
+"
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#begin()
+
+Plugin 'gmarik/vundle'
+Plugin 'mattn/gist-vim'
+Plugin 'canadaduane/VimKata'
+Plugin 'valloric/YouCompleteMe'
+
+call vundle#end()
+
+filetype plugin indent on
+
+set guifont=FreeMono\ 11
+
+if has("gui_running")
+  " GUI is running or is about to start.
+  " Maximize gvim window.
+  set lines=999 columns=999
+else
+  " This is console Vim.
+  if exists("+lines")
+    set lines=50
+  endif
+  if exists("+columns")
+    set columns=100
+  endif
+endif
 ```
 
 ## ruby
