@@ -168,6 +168,12 @@ git config --global credential.helper store
 * unimpaired -- adds easy way to add blank line without going into
 insert mode
 * fugitive -- do git within vim
+* YouCompleteMe
+```
+sudo apt-get install build-essential cmake python-dev libclang-dev python-clang-3.5
+cd ~/.vim/bundle/YouCompleteMe/
+./install.sh --clang-completer --system-libclang
+```
 
 ### settings
 
