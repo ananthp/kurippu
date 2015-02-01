@@ -32,7 +32,10 @@ java -version
 ```
 ### android SDK
 
-http://www.unixmen.com/install-android-sdk-ubuntu-14-04/
+[Android Studio](http://developer.android.com/sdk/index.html). Copy the
+android-studio folder to /opt. To update permissions `sudo setfacl -R -m u:ragu:rwX
+android-studio`  
+or http://www.unixmen.com/install-android-sdk-ubuntu-14-04/
 
 ### emulator
 
