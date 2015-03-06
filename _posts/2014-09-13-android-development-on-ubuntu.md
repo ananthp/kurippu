@@ -5,6 +5,14 @@ date:   2014-09-13 18:52:20
 categories: dev linux
 ---
 
+## Android Studio Setup
+
+1. Install Vim plugin, Relative Number plugin
+1. Update the theme to Dracula
+1. Check Editor > Code Completion > Insert Selected Variant by typing dot, space, etc.
+1. Check Editor > Other: Show Quick Doc on Mouse Move, delay 1000
+1. Uncheck Editor > Smart Keys > Insert Pair Bracket, Insert Pair Quote
+1. Editor > Smart Keys > Reformat on Paste => Reformat block
 
 ## Setup
 
