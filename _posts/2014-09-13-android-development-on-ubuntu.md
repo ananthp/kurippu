@@ -15,6 +15,7 @@ categories: dev linux
 1. Editor > Smart Keys > Reformat on Paste => Reformat block
 1. Keymap > Navigate > Symbol... Add new shortcut Ctrl + Comma; Remove existing mappings for that shortcut.
 1. Keymap > Navigate > File... Add new shortcut Ctrl + Semicolon.
+1. Keymap > Other > Show Intention Actions - Add new shortcut Ctrl + dot; Remove existing mapping for that shortcut.
 
 ## Setup
 
