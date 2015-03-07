@@ -13,6 +13,7 @@ categories: dev linux
 1. Check Editor > Other: Show Quick Doc on Mouse Move, delay 1000
 1. Uncheck Editor > Smart Keys > Insert Pair Bracket, Insert Pair Quote
 1. Editor > Smart Keys > Reformat on Paste => Reformat block
+1. Keymap > Symbol... Add new shortcut Ctrl + Comma; Remove existing mappings for that shortcut.
 
 ## Setup
 
