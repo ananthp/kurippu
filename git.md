@@ -14,3 +14,15 @@ e.g. `git checkout -b develop master`
 `git push --all`  
 
 `git log --graph --decorate --oneline`  
+
+`git tag archive/<branch> <branch>`  
+`git push --all`  
+`git branch -d <branch>`  
+`git push --all`  
+
+# tags
+
+`git tag -a v0.0.1`  
+
+
+
