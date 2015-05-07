@@ -10,3 +10,5 @@ github_username:  rpattabi
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+categories: navigation
