@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: page
 title:  "Stuff on top of Ubuntu"
-date:   2014-09-13 16:00:00
 categories: linux
 ---
 
