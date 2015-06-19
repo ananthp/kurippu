@@ -37,21 +37,16 @@ If bootstrap is included as sass:
 
 * New file under css: `bootstrap-custom.scss`. Include this file in `_includes/head`
 * Add blank front-matter. First two lines of `---`.
-* *Import* whatever
-
-{% highlight sass linenos %}
-
-// Core variables and mixins
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
-
-{% endhighlight%}
-
+* `@import` whatever.
 * Customize and use.
 
 [http://getbootstrap.com/css/#example-usage](http://getbootstrap.com/css/#example-usage) has some mistakes. Correct version:
 
 {% highlight sass linenos %}
+---
+---
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
 
 .wrapper { @include make-row(); }
 
