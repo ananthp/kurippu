@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: page
 title:  "Stuff on top of Ubuntu"
-date:   2014-09-13 16:00:00
 categories: linux
 ---
 
@@ -115,21 +114,39 @@ gnome-tweak-tool &
 ``` 
 Typing > Caps Lock behavior = Disabled / Swap it with Esc key / make it an additional esc
 
-### drive access for all users
+### Drive access for all users
+
+Steps:
+
+  1. Edit /etc/fstab. Ensure all the drive/partition has  `/dev/sda1 /mnt/music ext4 defaults,errors=remount-ro,acl 1 2`
+  1. Unmount to activate acl. `sudo mount -o remount,acl /mnt/music`
+  1. Create a new user group. `sudo addgroup kutties` (*Can be done without the group too; see below.*)
+  1. Add users to the group. `sudo gpasswd -a ragu kutties` and `gpasswd -a ananth kutties`
+  1. Add permissions to the group for the existing stuff. `sudo setfacl -Rm g:kutties:rwX /mnt/music`
+  1. Set this as default permissions for all future files and directories (recursively).  `sudo setfacl -d -Rm g:kutties:rwX /mnt/music`
+  1. Check: `sudo getfacl somefilename`
+
+Instead of creating group, we can add individual users and set rights for them.
+
+* Set permissions for individual users
+
+```sudo setfacl -Rm u:user1:rwX /path/to/whatever
+sudo setfacl -Rm u:user2:rX /path/to/whatever```
+
+* Run the same with `-d` to set them as default for future files/directories.
+
+```sudo setfacl -d -Rm u:user1:rwX /path/to/whatever
+sudo setfacl -d -Rm u:user2:rX /path/to/whatever```
+
+* Something gone wrong?
+
+  * Clear all acl permissions: `sudo setfacl -Rb /path/to/`
+  * Remove the default acl settings for the path: `sudo setfacl -Rk /path/to`
 
 references:
-* http://askubuntu.com/questions/52584/shared-folders-for-all-users
-* http://unix.stackexchange.com/questions/12842/make-all-new-files-in-a-directory-accessible-to-a-group
 
-steps:
-
-  1. edit /etc/fstab. Ensure all the drive/partition has  `/dev/sda1 /mnt/music ext4 defaults,errors=remount-ro,acl 1 2`
-  1. unmount to activate acl. `mount -o remount,acl /mnt/music`
-  1. create a new user group. `addgroup kutties`
-  1. add users to the group. `gpasswd -a ragu kutties` and `gpasswd -a ananth kutties`
-  1. add permissions to the group for the existing stuff. `setfacl -Rm g:kutties:rwX /mnt/music`
-  1. add permissions to the group for the new files in future. `setfacl -d -Rm g:kutties:rwX /mnt/music`
-  1. Ensure remount. `sudo umount /mnt/music` and then `sudo mount /mnt/music`
+* [http://askubuntu.com/questions/52584/shared-folders-for-all-users](http://askubuntu.com/questions/52584/shared-folders-for-all-users)  
+* [http://unix.stackexchange.com/questions/12842/make-all-new-files-in-a-directory-accessible-to-a-group](http://unix.stackexchange.com/questions/12842/make-all-new-files-in-a-directory-accessible-to-a-group)  
 
 ### Tamil typing support
 

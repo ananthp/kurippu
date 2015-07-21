@@ -4,6 +4,20 @@ layout: default
 
 <div class="home">
 
+
+<h1> Notes </h1>
+
+
+  <ul class="posts">
+    {% for page in site.pages %}
+      <li>
+      {% unless page.categories contains 'navigation' %}
+        <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {%endunless %}
+      </li>
+    {% endfor %}
+  </ul>
+
   <h1>Posts</h1>
 
   <ul class="posts">
