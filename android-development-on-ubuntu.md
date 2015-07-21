@@ -18,6 +18,28 @@ categories: dev linux
 1. Editor > Auto Import. Insert Import on Paste => All, Optimize imports
    on the fly => check, Add unambiguous imports on the fly => check.
 
+## Optimization
+
+Reference: http://geek.moneylover.me/android-studio-eliminate-shutter-n-lag/
+
+1. Update vmoptions file(s) to have -Xms256m -Xmx2048m
+1. Open android studio
+1. Settings > Appearance > Show Memory Indicator. It should show 2000+M as upper limit.
+1. go to Settings/Compiler and check everything, except for the 2nd option Make project automatically. 
+1. For gradle VM Options, we use these configurations: `-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8`
+1. Next, add the following lines to gradle.properties in your project directory:
+
+```
+org.gradle.daemon=true
+org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8
+org.gradle.parallel=true
+org.gradle.configureondemand=true
+```
+
+## Launcher
+
+Android Studio > Tools > Create Desktop Entry. Then search for android studio in Dash. The first / biggest icon is the right one to choose for the launcher
+
 ## Setup
 
 Following list provides basic idea of what is required:
