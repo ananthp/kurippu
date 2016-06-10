@@ -22,7 +22,7 @@ Remove libre office. Add ..
 # MUST HAVE
 
 ```
-chromium-browser inkscape gimp blender graphicsmagick vim git-core smplayer aptitude quodlibet scantailor lm-sensors terminator 
+chromium-browser inkscape gimp blender graphicsmagick vim git-core smplayer aptitude quodlibet scantailor lm-sensors terminator indicator-cpufreq 
 
 soundconverter wine alsa-tools-gui
 
