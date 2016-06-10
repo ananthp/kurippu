@@ -22,13 +22,13 @@ Remove libre office. Add ..
 # MUST HAVE
 
 ```
-chromium-browser inkscape gimp graphicsmagick vim git-core smplayer aptitude quodlibet scantailor lm-sensors terminator 
+chromium-browser inkscape gimp blender graphicsmagick vim git-core smplayer aptitude quodlibet scantailor lm-sensors terminator 
 
 soundconverter wine alsa-tools-gui
 
 keepassx storebackup acl
 
-lilypond  
+lilypond # install rvm -> ruby before this   
 
 scribus 
 
