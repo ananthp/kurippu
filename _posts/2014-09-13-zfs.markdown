@@ -11,10 +11,10 @@ categories: linux
 * `disks` tool &/ other partition managers might show the disk as Free/unused. 
 
 ### Create Pool
-`sudo zpool create -f -m /mnt/mountpoint zfspoolnamehere /dev/disks/by-id/carefully_choose_the_correct_disk`
+`sudo zpool create -f -m /mnt/mountpoint zfspoolnamehere /dev/disk/by-id/carefully_choose_the_correct_disk`
 
 ### Options
-* can be set during `zpool create` with `-o option=value` for each option, or `sudo zpool set option=value zfspoolnamehere`
+* can be set during `zpool create` with `-o option=value` for each option, or `sudo zfs set option=value zfspoolnamehere`
 
 `copies=2` to keep 2 copies of each file in the disk. (Single Disk. No RAID setup)
 `dedup=on` deduplication
