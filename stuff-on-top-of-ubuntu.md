@@ -21,10 +21,23 @@ Remove libre office. Add ..
 
 # MUST HAVE
 
-gimp scribus inkscape vim-gnome git-core curl build-essential keepassx storebackup smplayer wine aptitude lilypond quodlibet scantailor lm-sensors acl terminator soundconverter alsa-tools-gui
+```
+chromium-browser inkscape gimp blender graphicsmagick vim git-core smplayer aptitude quodlibet scantailor lm-sensors terminator indicator-cpufreq 
 
-acl - Access control lists
-alsa-tools-gui - needed for pro sound card mixer
+soundconverter wine alsa-tools-gui
+
+keepassx storebackup acl
+
+lilypond # install rvm -> ruby before this   
+
+scribus 
+
+build-essential  
+```
+
+lilypond is huge!  
+acl - Access control lists  
+alsa-tools-gui - needed for pro sound card mixer  
 calf-plugins - calf plugins (studio stuff. need to put them in a sep list)
 
 [tomighty](http://www.tomighty.org/download) Pomodoro timer (It doesn't work sometimes.)  
